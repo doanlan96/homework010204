@@ -1,0 +1,12 @@
+    [
+        {
+            "name" : "Nguyễn Văn Cường",
+            "age" : "19",
+            "city" : "Ha Noi"
+        },
+        {
+            "name" : "Nguyễn Văn Kính",
+            "age" : "12",
+            "city" : "Sai Gon"
+        }
+    ]
