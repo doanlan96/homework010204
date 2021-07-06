@@ -24,6 +24,8 @@ func main() {
 	// readtxt.CheckPrime(file)
 	// fmt.Println(readtxt.IsExist(3, file))
 
+	// api.HandleRequest()
+
 	db, err := database.DbConnection() //Khởi tạo biến conection
 	if err != nil {                    //Catch error trong quá trình thực thi
 		log.Printf("Error %s when getting db connection", err)
@@ -32,6 +34,8 @@ func main() {
 	defer db.Close()
 	log.Printf("Successfully connected to database")
 
-	crawler.Crawler(db)
+	crawler.CrawlFilmData(db)
+
+	// crawler.CrawlProductData(db)
 
 }
